@@ -1,4 +1,6 @@
 .btn-default {
+  display: block;
+  width: fit-content;
   background-color: var(--grey);
   padding: 10px 20px;
   transition: var(--transition);
@@ -11,6 +13,8 @@
   }
 }
 .btn-secondary {
+  display: block;
+  width: fit-content;
   background-color: #fff;
   padding: 10px 20px;
   transition: var(--transition);
