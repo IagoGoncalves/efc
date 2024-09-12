@@ -1,0 +1,25 @@
+.btn-default {
+  background-color: var(--grey);
+  padding: 10px 20px;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+  font-weight: var(--weight700);
+  color: #fff;
+  &:hover {
+    background-color: var(--grey2);
+  }
+}
+.btn-secondary {
+  background-color: #fff;
+  padding: 10px 20px;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+  font-weight: var(--weight700);
+  color: var(--black);
+  &:hover {
+    color: #fff;
+    background-color: var(--grey);
+  }
+}

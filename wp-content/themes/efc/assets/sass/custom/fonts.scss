@@ -1,0 +1,32 @@
+:root {
+  .titleOfSection {
+    color: var(--black);
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: var(--weight800);
+  }
+  .title {
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: var(--weight700);
+  }
+  .subtitle {
+    color: var(--black);
+    font-size: 2.4rem;
+  }
+  .paragraph {
+    color: var(--black2);
+    font-size: 2rem;
+    font-weight: var(--weight400);
+  }
+  .smallText {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: var(--weight700);
+  }
+  .date {
+    color: var(--black2);
+    font-size: 1.4rem;
+    font-weight: var(--weight400);
+  }
+}

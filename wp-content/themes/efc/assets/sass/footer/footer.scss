@@ -1,0 +1,69 @@
+.footer {
+  .firstBlock {
+    padding: 80px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    h3 {
+      font-size: 2rem;
+      font-weight: var(--weight700);
+      margin-bottom: 20px;
+    }
+    a {
+      font-size: 2rem;
+      font-weight: var(--weight500);
+      color: var(--black);
+      transition: var(--transition);
+      &:hover {
+        color: var(--black2);
+      }
+    }
+    div {
+      nav {
+        display: grid;
+        gap: 10px;
+      }
+      span {
+        display: block;
+        a {
+          gap: 5px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          a {
+            transition: var(--transition);
+            svg {
+              path {
+                transition: var(--transition);
+              }
+            }
+            &:hover {
+              svg {
+                path {
+                  fill: var(--black2);
+                }
+              }
+            }
+          }
+        }
+      }
+      .follow {
+        margin-top: 80px;
+      }
+    }
+    .location {
+      display: grid;
+      .privacy {
+        font-weight: var(--weight800);
+        margin-top: 80px;
+      }
+    }
+  }
+  .copy {
+    border-top: 1px solid var(--black2);
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+}

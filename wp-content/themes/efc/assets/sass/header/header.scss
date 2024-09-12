@@ -1,0 +1,66 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  .first-line {
+    background-color: var(--black);
+    padding: 30px 0;
+    .container {
+      justify-content: space-between;
+      .none {
+        color: var(--black);
+        width: 186px;
+      }
+      .whatsapp {
+        font-size: 2rem;
+        color: #fff;
+        gap: 5px;
+        transition: var(--transition);
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        gap: 20px;
+        a {
+          svg {
+            transition: var(--transition);
+            path {
+              transition: var(--transition);
+            }
+            &:hover {
+              path {
+                fill: var(--black2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .second-line {
+    background-color: var(--grey3);
+    padding: 30px 0;
+    .container {
+      position: relative;
+      justify-content: space-between;
+      .none {
+        color: var(--grey3);
+        width: 186px;
+      }
+      .logo {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 17%);
+      }
+      a {
+        text-transform: uppercase;
+        transition: var(--transition);
+        &:hover {
+          color: var(--black2);
+        }
+      }
+    }
+  }
+}
