@@ -20,11 +20,61 @@ get_header(); ?>
 			</div>
 			<div class="swiper-pagination"></div>
 		</section>
-		<section class="about container">
-			<img src="<?= get_field('primeira_secao_imagem_da_primeira_secao')?>" alt="foto do time">
-			<div>
-				<h2 class="title"><?= get_field('primeira_secao_titulo_da_primeira_secao')?></h2>
-				<p class="paragraph"><?= get_field('primeira_secao_descritivo_da_primeira_secao')?></p>
+		<div class="container">
+			<section class="about">
+				<img src="<?= get_field('primeira_secao_imagem_da_primeira_secao')?>" alt="foto do time">
+				<div>
+					<h2 class="title"><?= get_field('primeira_secao_titulo_da_primeira_secao')?></h2>
+					<p class="paragraph"><?= get_field('primeira_secao_descritivo_da_primeira_secao')?></p>
+				</div>
+			</section>
+			<section class="news">
+				<h2 class="title">Notícias</h2>
+				<div>
+					<?php $args = array('post_type' => 'noticias', 'posts_per_page' => 3); $var = new WP_Query($args); if($var->have_posts()): while($var->have_posts()): $var->the_post();?>																	 
+						<a href="<?php the_permalink()?>">
+							<figure><?= get_the_post_thumbnail(get_the_ID());?></figure>
+							<p class="date"><?= get_the_date('d/m/Y'); ?></p>
+							<h3 class="subtitle"><?php the_title()?></h3>
+						</a>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
+				</div>
+				<a href="#" class="btn-default">Todas as notícias</a>
+			</section>
+			<div class="cta">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-cta.png">
+				<span>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-toca-do-lobo.png">
+					<a href="#" class="btn-secondary">Compre aqui</a>
+				</span>
+			</div>
+		</div>
+		<section class="sponsors">
+			<div class="container">
+				<div class="first-line">
+					<h3 class="paragraph"> Patrocinadores</h3>
+					<?php
+						$ultima_secao = get_field('ultima_secao');
+						$galeria_de_logos = $ultima_secao['galeria_de_logos_patrocinadores'];
+						echo '<div class="galeria-logos align">';
+						foreach( $galeria_de_logos as $imagem ):
+							echo '<img src="' . esc_url( $imagem['url'] ) . '" alt="' . esc_attr( $imagem['alt'] ) . '" />';
+						endforeach;
+						echo '</div>';
+					?>
+				</div>
+				<div class="second-line">
+					<h3 class="paragraph">Parceiros</h3>
+					<?php
+						$ultima_secao = get_field('ultima_secao');
+						$galeria_de_logos = $ultima_secao['galeria_de_logos_parceiros'];
+						echo '<div class="galeria-logos align">';
+						foreach( $galeria_de_logos as $imagem ):
+							echo '<img src="' . esc_url( $imagem['url'] ) . '" alt="' . esc_attr( $imagem['alt'] ) . '" />';
+						endforeach;
+						echo '</div>';
+					?>
+				</div>
 			</div>
 		</section>
 	</main>

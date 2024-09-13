@@ -31,5 +31,21 @@
     );
     register_post_type('Banners', $args);
 
+    $news = array(
+        'name'          => _x('Notícias', 'post type general name'),
+        'singular_name' => _x('Noticia', 'post type singular name'),
+        'menu_name'     => 'Noticias',
+    );
+    $args = array(
+        'labels'            => $news,
+        'description'       => 'Custom Post for noticias',
+        'public' => true,
+        'has_archive' => true,
+        'show_in_nav_menus' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'menu_icon' => 'dashicons-welcome-widgets-menus',
+    );
+    register_post_type('noticias', $args);
+
 
     flush_rewrite_rules();
