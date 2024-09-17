@@ -40,14 +40,34 @@
         </section>
         <section class="second-line">
             <div class="container align">
-                <a href="#" class="smallText">Home</a>
-                <a href="#" class="smallText">Clube</a>
-                <a href="#" class="smallText">Institucional</a>
+                <a href="<?= esc_url(home_url('/')); ?>" class="smallText">Home</a>
+                <div href="#" class="smallText submenu" onClick="activeSubMenu('clube')">Clube
+                    <span>
+                        <a href="<?= esc_url(home_url('/historia')); ?>">História</a>
+                        <a href="<?= esc_url(home_url('/ex-presidentes')); ?>">Ex-presidentes</a>
+                        <a href="<?= esc_url(home_url('/identidade')); ?>">Identidade</a>
+                    </span>
+                </div>
+                <div href="#" class="smallText submenu" onClick="activeSubMenu('institucional')">Institucional
+                    <span>
+                        <a href="#">Estatuto</a>
+                        <a href="#">Regimento Interno</a>
+                        <a href="#">Diretoria</a>
+                        <a href="#">Missão, Visão e Valores</a>
+                </div>
                 <a href="#" class="smallText">Sócio torcedor</a>
                 <p class="none">.</p>
                 <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" ></a>
-                <a href="#" class="smallText">Futebol</a>
-                <a href="#" class="smallText">Área social</a>
+                <div href="#" class="smallText submenu" onClick="activeSubMenu('futebol')">Futebol
+                    <span>
+                        <a href="#">Futebol Sub-10</a>
+                </div>
+                <div href="#" class="smallText submenu" onClick="activeSubMenu('areasocial')">Área social
+                    <span>
+                        <a href="#">Quadra</a>
+                        <a href="#">Restaurante</a>
+                        <a href="#">Piscina</a>
+                </div>
                 <a href="#" class="smallText">Transparência</a>
                 <a href="#" class="smallText">Notícias</a>
             </div>

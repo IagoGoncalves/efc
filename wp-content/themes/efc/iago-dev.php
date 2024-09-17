@@ -47,5 +47,21 @@
     );
     register_post_type('noticias', $args);
 
+    $president = array(
+        'name'          => _x('Ex Presidentes', 'post type general name'),
+        'singular_name' => _x('Ex Presidente', 'post type singular name'),
+        'menu_name'     => 'Ex Presidentes',
+    );
+    $args = array(
+        'labels'            => $president,
+        'description'       => 'Custom Post for ex Presidentes',
+        'public' => true,
+        'has_archive' => true,
+        'show_in_nav_menus' => true,
+        'supports' => array('title', 'thumbnail'),
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo',
+    );
+    register_post_type('expresident', $args);
+
 
     flush_rewrite_rules();
