@@ -26,6 +26,18 @@ if (locale === '/') {
     });
 }
 
+// Swiper calendar
+    var swiper = new Swiper('.swiper-calendar', {
+        speed: 5000,
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 80,
+        navigation: {
+            nextEl: ".swiper-button-next",
+        },  
+    });
+
+//  Submenu
 let activeSubmenu = null;
 function activeSubMenu(menu) {
     const submenu = document.querySelector(`div[onClick="activeSubMenu('${menu}')"] span`);
@@ -48,6 +60,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// Menu
 window.addEventListener('scroll', function () {
     if (window.scrollY > 100) {
         document.getElementById('header').classList.add('fixedShadow');
@@ -55,3 +68,20 @@ window.addEventListener('scroll', function () {
         document.getElementById('header').classList.remove('fixedShadow');
     }
 })
+
+// Menu pag futebol
+function handleTab(selectedTab) {
+    const tabs = ['elenco', 'comissao', 'calendario'];
+    tabs.forEach(tab => {
+        const btn = document.getElementById(`btn-${tab}`);
+        const section = document.getElementById(tab);
+
+        if (tab === selectedTab) {
+            btn.classList.add('underline');
+            section.style.display = 'flex';
+        } else {
+            btn.classList.remove('underline');
+            section.style.display = 'none';
+        }
+    });
+}

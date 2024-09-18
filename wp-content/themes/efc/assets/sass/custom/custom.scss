@@ -31,3 +31,35 @@ body {
   --transition: all 0.2s;
   --border-radius: 20px;
 }
+
+.default-card {
+  figure {
+    max-width: 350px;
+    max-height: 337px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  span {
+    padding: 20px;
+    text-align: center;
+    display: block;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    h2 {
+      font-weight: var(--weight700) !important;
+      color: #fff !important;
+      margin-bottom: 24px;
+    }
+    p {
+      color: #fff !important;
+      line-height: 1.6;
+      b {
+        font-weight: var(--weight500);
+      }
+    }
+  }
+}

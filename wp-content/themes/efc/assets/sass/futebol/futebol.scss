@@ -1,0 +1,108 @@
+main.soccer {
+  .underline {
+    border-bottom: 3px solid var(--black);
+  }
+  nav {
+    margin: 80px 0;
+    background-color: var(--grey3);
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      a {
+        padding: 30px 0;
+        text-transform: uppercase;
+        transition: var(--transition);
+        &:hover {
+          color: var(--black2);
+        }
+      }
+    }
+  }
+  section#elenco {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    gap: 30px;
+  }
+  section#comissao {
+    display: none;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  section#calendario {
+    .group {
+      width: 50%;
+      display: flex;
+      position: relative;
+      background-color: var(--black);
+      .swiper-container {
+        overflow: hidden;
+        margin-left: 200px;
+        padding: 40px 0px;
+        position: relative;
+        h2 {
+          color: #fff;
+          text-transform: uppercase;
+          margin-bottom: 50px;
+        }
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            gap: 16px;
+            > span {
+              display: block;
+              width: fit-content;
+              border-right: 1px solid #fff;
+              padding-right: 30px;
+              p {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-size: 4.8rem;
+                font-weight: var(--weight700);
+                color: #fff;
+                &:nth-child(1) {
+                  border-bottom: 1px solid #fff;
+                }
+              }
+            }
+            > div {
+              width: 50%;
+              p {
+                display: flex;
+                justify-content: space-between;
+                font-size: 2rem;
+                font-weight: var(--weight800);
+                color: #fff;
+                &:nth-child(1) {
+                  font-weight: var(--weight500);
+                  margin-bottom: 18px;
+                }
+              }
+            }
+          }
+        }
+        .swiper-button-next {
+          color: #fff;
+          font-weight: var(--weight700);
+          z-index: 9;
+        }
+        .swiper-button-prev {
+          display: none;
+        }
+      }
+      &:nth-last-child(1) {
+        background-color: var(--black2);
+        .swiper-container {
+          margin-left: 160px;
+        }
+      }
+    }
+  }
+}

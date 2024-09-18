@@ -52,15 +52,15 @@
                     <span>
                         <a href="#">Estatuto</a>
                         <a href="#">Regimento Interno</a>
-                        <a href="#">Diretoria</a>
-                        <a href="#">Missão, Visão e Valores</a>
+                        <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
+                        <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
                 </div>
                 <a href="#" class="smallText">Sócio torcedor</a>
                 <p class="none">.</p>
                 <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" ></a>
                 <div href="#" class="smallText submenu" onClick="activeSubMenu('futebol')">Futebol
                     <span>
-                        <a href="#">Futebol Sub-10</a>
+                        <a href="<?= esc_url(home_url('/futebol-sub-10')); ?>">Futebol Sub-10</a>
                 </div>
                 <div href="#" class="smallText submenu" onClick="activeSubMenu('areasocial')">Área social
                     <span>
