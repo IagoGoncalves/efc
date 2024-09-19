@@ -1,0 +1,20 @@
+main.socialarea {
+  .container {
+    width: 60%;
+    h1 {
+      text-transform: uppercase;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+  > figure {
+    max-width: 1920px;
+    max-height: 600px;
+    margin: 80px 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

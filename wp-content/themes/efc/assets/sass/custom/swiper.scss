@@ -1,0 +1,18 @@
+.swiper-gallery {
+  position: relative;
+  margin-top: 80px;
+  overflow: hidden;
+  figure {
+    max-width: 480px;
+    max-height: 324px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #fff;
+    font-weight: var(--weight700);
+  }
+}

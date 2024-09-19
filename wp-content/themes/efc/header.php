@@ -54,6 +54,7 @@
                         <a href="#">Regimento Interno</a>
                         <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
+                    </span>
                 </div>
                 <a href="#" class="smallText">Sócio torcedor</a>
                 <p class="none">.</p>
@@ -64,11 +65,12 @@
                 </div>
                 <div href="#" class="smallText submenu" onClick="activeSubMenu('areasocial')">Área social
                     <span>
-                        <a href="#">Quadra</a>
-                        <a href="#">Restaurante</a>
-                        <a href="#">Piscina</a>
+                        <a href="<?= esc_url(home_url('/quadra-poliesportiva')); ?>">Quadra</a>
+                        <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a>
+                        <a href="<?= esc_url(home_url('/piscina')); ?>">Piscina</a>
+                    </span>
                 </div>
-                <a href="#" class="smallText">Transparência</a>
+                <a href="<?= esc_url(home_url('/transparencia')); ?>" class="smallText">Transparência</a>
                 <a href="#" class="smallText">Notícias</a>
             </div>
         </section>
