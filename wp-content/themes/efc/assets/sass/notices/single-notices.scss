@@ -1,0 +1,104 @@
+main.single-notice {
+  margin-bottom: 80px;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    section {
+      position: relative;
+      width: 73%;
+      .header {
+        h3 {
+          margin: 40px 0 20px;
+        }
+        > span {
+          align-items: center;
+          justify-content: space-between;
+          > div {
+            p {
+              align-items: center;
+              gap: 12px;
+            }
+          }
+        }
+      }
+      figure {
+        margin: 40px 0;
+        max-width: 1095px;
+        max-height: 669px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    aside {
+      width: 24%;
+      > div {
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          color: #fff;
+          text-align: center;
+        }
+        a {
+          margin-top: 60px;
+        }
+      }
+      .card1 {
+        background-image: url(../efc/assets/images/bg-card-1.png);
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        img {
+          margin-top: 60px;
+        }
+      }
+      .card2 {
+        background-image: url(../efc/assets/images/bg-card-2.png);
+        padding-top: 230px;
+      }
+      .card3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        img {
+          max-width: 385px;
+          max-height: 366px;
+          width: 100%;
+          height: auto;
+        }
+        h2 {
+          background-color: var(--black);
+          text-align: center;
+          color: #fff;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  .see-more {
+    padding-top: 40px;
+    margin-top: 80px;
+    border-top: 2px solid var(--black);
+    h2 {
+      text-transform: uppercase;
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 45px;
+      a {
+        figure {
+          max-width: 480px;
+          max-height: 324px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

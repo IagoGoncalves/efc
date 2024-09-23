@@ -31,13 +31,9 @@ get_header(); ?>
 			<section class="news">
 				<h2 class="title">Notícias</h2>
 				<div>
-					<?php $args = array('post_type' => 'noticias', 'posts_per_page' => 3); $var = new WP_Query($args); if($var->have_posts()): while($var->have_posts()): $var->the_post();?>																	 
-						<a href="<?php the_permalink()?>">
-							<figure><?= get_the_post_thumbnail(get_the_ID());?></figure>
-							<p class="date"><?= get_the_date('d/m/Y'); ?></p>
-							<h3 class="subtitle"><?php the_title()?></h3>
-						</a>
-					<?php endwhile; endif; wp_reset_postdata(); ?>
+					<?php $args = array('post_type' => 'noticias', 'posts_per_page' => 3); $var = new WP_Query($args); if($var->have_posts()): while($var->have_posts()): $var->the_post();
+						get_template_part('parts/card-notice');
+					endwhile; endif; wp_reset_postdata(); ?>
 				</div>
 				<a href="#" class="btn-default">Todas as notícias</a>
 			</section>

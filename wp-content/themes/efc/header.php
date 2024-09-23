@@ -71,7 +71,7 @@
                     </span>
                 </div>
                 <a href="<?= esc_url(home_url('/transparencia')); ?>" class="smallText">Transparência</a>
-                <a href="#" class="smallText">Notícias</a>
+                <a href="<?= esc_url(home_url('/noticias')); ?>" class="smallText">Notícias</a>
             </div>
         </section>
     </header>
