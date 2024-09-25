@@ -15,6 +15,7 @@ get_header(); ?>
 							<a href="<?= get_field('url_do_botao')?>" class="btn-secondary"><?= get_field('nome_do_botao')?></a>
 						</div>
 						<?= get_the_post_thumbnail(get_the_ID());?>
+						<img src="<?= get_field('banner_mobile') ?>" alt="" class="bannerMobile">
 					</div>
 				<?php endwhile; endif; wp_reset_postdata(); ?>
 			</div>

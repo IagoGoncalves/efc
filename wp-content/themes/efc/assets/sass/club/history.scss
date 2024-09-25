@@ -6,12 +6,19 @@ main.historia {
       margin: 80px 0;
       max-width: 1135px;
       max-height: 669px;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     h1 {
       text-transform: uppercase;
     }
     h2 {
       margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 990px) {
+      width: 95%;
     }
   }
 }

@@ -23,7 +23,7 @@ var swiper = new Swiper('.swiper-gallery', {
     },
     autoplay: {
         delay: 3800,
-    },    
+    },   
 });
 
 // Swiper calendar
@@ -60,12 +60,20 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Menu
+document.querySelectorAll('.header-menu-item').forEach(function(menuItem) {
+    menuItem.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const menu = menuItem.getAttribute('data-menu');
+        activeSubMenu(menu);
+    });
+});
+
+// Fixed menu
 window.addEventListener('scroll', function () {
     if (window.scrollY > 100) {
-        document.getElementById('header').classList.add('fixedShadow');
+        document.getElementById('header-desktop').classList.add('fixedShadow');
     }else{
-        document.getElementById('header').classList.remove('fixedShadow');
+        document.getElementById('header-desktop').classList.remove('fixedShadow');
     }
 })
 
@@ -84,4 +92,10 @@ function handleTab(selectedTab) {
             section.style.display = 'none';
         }
     });
+}
+
+// Menu mobile
+function toggleMenuMobile() {
+    document.getElementById('hamburger').classList.toggle('activeHamburger');
+    document.getElementById('navMobile').style.display = (document.getElementById('navMobile').style.display === 'flex' ? 'none' : 'flex');
 }

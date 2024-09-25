@@ -61,6 +61,16 @@
         margin-top: 80px;
       }
     }
+    .logo {
+      img {
+        max-width: 253px;
+        max-height: 306px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media only screen and (max-width: 990px) {
+    }
   }
   .copy {
     border-top: 1px solid var(--black2);

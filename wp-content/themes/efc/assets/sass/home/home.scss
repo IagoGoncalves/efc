@@ -6,6 +6,10 @@
         position: relative;
         img {
           width: 100%;
+          height: auto;
+        }
+        .bannerMobile {
+          display: none;
         }
         .content {
           position: absolute;
@@ -27,6 +31,47 @@
           }
           a {
             margin-top: 30px;
+          }
+          @media only screen and (max-width: 1340px) {
+            h2 {
+              font-size: 4.2rem;
+            }
+            p {
+              font-size: 2rem;
+            }
+          }
+          @media only screen and (max-width: 990px) {
+            h2 {
+              font-size: 3.6rem;
+            }
+            p {
+              font-size: 1.8rem;
+            }
+          }
+        }
+        @media only screen and (max-width: 990px) {
+          .attachment-post-thumbnail {
+            display: none;
+          }
+          .bannerMobile {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+          .content {
+            width: 80%;
+            top: 25%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            h2,
+            p {
+              width: 100%;
+            }
+            a {
+              margin-left: auto;
+              margin-right: auto;
+            }
           }
         }
       }
@@ -51,8 +96,20 @@
     gap: 60px;
     display: flex;
     align-items: flex-start;
+    > img {
+      max-width: 693px;
+      max-height: 400px;
+      width: 100%;
+      height: auto;
+    }
     div h2 {
       margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 1340px) {
+      align-items: center;
+      img {
+        width: 50%;
+      }
     }
   }
   .news {
@@ -84,6 +141,12 @@
     position: relative;
     text-align: center;
     margin: 80px 0;
+    > img {
+      max-width: 1046px;
+      max-height: 197px;
+      width: 100%;
+      height: auto;
+    }
     span {
       display: flex;
       flex-direction: column;
@@ -92,6 +155,10 @@
       right: 25%;
       top: 50%;
       transform: translate(50%, -50%);
+      @media only screen and (max-width: 1340px) {
+        transform: translate(50%, -50%);
+        right: 13%;
+      }
     }
   }
   .sponsors {
@@ -117,6 +184,9 @@
           img {
             max-width: 250px;
             max-height: 85px;
+          }
+          @media only screen and (max-width: 990px) {
+            gap: 40px;
           }
         }
       }

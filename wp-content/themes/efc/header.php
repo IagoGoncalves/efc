@@ -12,7 +12,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open();?>
-    <header id="header">
+    <header id="header-desktop">
         <section class="first-line">
             <div class="container align">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-toca-do-lobo.png" alt="">
@@ -41,14 +41,14 @@
         <section class="second-line">
             <div class="container align">
                 <a href="<?= esc_url(home_url('/')); ?>" class="smallText">Home</a>
-                <div href="#" class="smallText submenu" onClick="activeSubMenu('clube')">Clube
+                <div href="#" class="smallText submenu" data-menu="desktopMenu1" onClick="activeSubMenu('desktopMenu1')">Clube
                     <span>
                         <a href="<?= esc_url(home_url('/historia')); ?>">História</a>
                         <a href="<?= esc_url(home_url('/ex-presidentes')); ?>">Ex-presidentes</a>
                         <a href="<?= esc_url(home_url('/identidade')); ?>">Identidade</a>
                     </span>
                 </div>
-                <div href="#" class="smallText submenu" onClick="activeSubMenu('institucional')">Institucional
+                <div href="#" class="smallText submenu" data-menu="desktopMenu2" onClick="activeSubMenu('desktopMenu2')">Institucional
                     <span>
                         <a href="#">Estatuto</a>
                         <a href="#">Regimento Interno</a>
@@ -59,11 +59,12 @@
                 <a href="#" class="smallText">Sócio torcedor</a>
                 <p class="none">.</p>
                 <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" ></a>
-                <div href="#" class="smallText submenu" onClick="activeSubMenu('futebol')">Futebol
+                <div href="#" class="smallText submenu" data-menu="desktopMenu3" onClick="activeSubMenu('desktopMenu3')">Futebol
                     <span>
                         <a href="<?= esc_url(home_url('/futebol-sub-10')); ?>">Futebol Sub-10</a>
+                    </span>
                 </div>
-                <div href="#" class="smallText submenu" onClick="activeSubMenu('areasocial')">Área social
+                <div href="#" class="smallText submenu" data-menu="desktopMenu4" onClick="activeSubMenu('desktopMenu4')">Área social
                     <span>
                         <a href="<?= esc_url(home_url('/quadra-poliesportiva')); ?>">Quadra</a>
                         <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a>
@@ -75,7 +76,48 @@
             </div>
         </section>
     </header>
+    <header class="mobile">
+        <div>
+            <p class="none">.</p>
+            <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" ></a>
+            <span class="hamburger" onClick="toggleMenuMobile()" id="hamburger"></span>
+            <nav id="navMobile">
+                <a href="<?= esc_url(home_url('/')); ?>" class="smallText">Home</a>
+                <div href="#" class="smallText submenu" data-menu="mobileMenu1" onClick="activeSubMenu('mobileMenu1')">Clube
+                    <span>
+                        <a href="<?= esc_url(home_url('/historia')); ?>">História</a>
+                        <a href="<?= esc_url(home_url('/ex-presidentes')); ?>">Ex-presidentes</a>
+                        <a href="<?= esc_url(home_url('/identidade')); ?>">Identidade</a>
+                    </span>
+                </div>
+                <div href="#" class="smallText submenu" data-menu="mobileMenu2" onClick="activeSubMenu('mobileMenu2')">Institucional
+                    <span>
+                        <a href="#">Estatuto</a>
+                        <a href="#">Regimento Interno</a>
+                        <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
+                        <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
+                    </span>
+                </div>
+                <a href="#" class="smallText">Sócio torcedor</a>
+                <div href="#" class="smallText submenu" data-menu="mobileMenu3" onClick="activeSubMenu('mobileMenu3')">Futebol
+                    <span>
+                        <a href="<?= esc_url(home_url('/futebol-sub-10')); ?>">Futebol Sub-10</a>
+                    </span>
+                </div>
+                <div href="#" class="smallText submenu" data-menu="mobileMenu4" onClick="activeSubMenu('mobileMenu4')">Área social
+                    <span>
+                        <a href="<?= esc_url(home_url('/quadra-poliesportiva')); ?>">Quadra</a>
+                        <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a>
+                        <a href="<?= esc_url(home_url('/piscina')); ?>">Piscina</a>
+                    </span>
+                </div>
+                <a href="<?= esc_url(home_url('/transparencia')); ?>" class="smallText">Transparência</a>
+                <a href="<?= esc_url(home_url('/noticias')); ?>" class="smallText">Notícias</a>
+            </nav>
+        </div>
+    </header>
     <?php 
+
         function formatarVariavel($variavel) {
             $variavel = str_replace(' ', '', $variavel);
             $variavel = str_replace('(', '', $variavel);

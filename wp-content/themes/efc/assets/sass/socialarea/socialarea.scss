@@ -1,11 +1,15 @@
 main.socialarea {
-  .container {
+  margin-bottom: 80px;
+  .container-interno {
     width: 60%;
     h1 {
       text-transform: uppercase;
     }
     h2 {
       margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 990px) {
+      width: 95%;
     }
   }
   > figure {
