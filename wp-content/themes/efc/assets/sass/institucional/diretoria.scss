@@ -26,6 +26,19 @@ main.director {
         }
       }
     }
+    @media only screen and (max-width: 770px) {
+      background: var(--black);
+      .container {
+        flex-direction: column;
+        figure {
+          margin: 0 auto;
+        }
+        > div {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
   }
   .members {
     margin: 80px 0;

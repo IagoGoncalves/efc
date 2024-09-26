@@ -15,7 +15,7 @@ if (locale === '/') {
 var swiper = new Swiper('.swiper-gallery', {
     speed: 5000,
     slidesPerView: 1,
-    spaceBetween: 80,
+    spaceBetween: 30,
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
