@@ -14,16 +14,30 @@ if (locale === '/') {
 // Swiper gallery
 var swiper = new Swiper('.swiper-gallery', {
     speed: 5000,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 80,
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    autoplay: {
-        delay: 3800,
-    },   
+    breakpoints: {
+        770: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        990: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    // autoplay: {
+    //     delay: 3800,
+    // },   
 });
 
 // Swiper calendar

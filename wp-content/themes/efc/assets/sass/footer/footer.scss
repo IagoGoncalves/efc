@@ -70,6 +70,27 @@
       }
     }
     @media only screen and (max-width: 990px) {
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        margin-top: 40px;
+        img {
+          max-width: 109px;
+          max-height: 131px;
+        }
+      }
+      > div {
+        text-align: center;
+        .follow {
+          margin-top: 40px;
+        }
+      }
+      .location {
+        margin-top: 40px;
+        .privacy {
+          margin-top: 40px;
+        }
+      }
     }
   }
   .copy {

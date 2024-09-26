@@ -1,19 +1,6 @@
     <footer class="footer">
         <section class="container firstBlock">
             <div>
-                <h3>Acesso rápido</h3>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Clube</a>
-                    <a href="#">Institucional</a>
-                    <a href="#">Sócio torcedor</a>
-                    <a href="#">Futebol</a>
-                    <a href="#">Área social</a>
-                    <a href="#">Transparência</a>
-                    <a href="#">Notícias</a>
-                </nav>
-            </div>
-            <div>
                 <span>
                     <h3>Contato</h3>
                     <a href="#" class="align">

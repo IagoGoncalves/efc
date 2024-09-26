@@ -78,7 +78,7 @@
     </header>
     <header class="mobile">
         <div>
-            <p class="none">.</p>
+            <p class="none">............</p>
             <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" ></a>
             <span class="hamburger" onClick="toggleMenuMobile()" id="hamburger"></span>
             <nav id="navMobile">
