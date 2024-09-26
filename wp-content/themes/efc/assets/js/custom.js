@@ -44,11 +44,21 @@ var swiper = new Swiper('.swiper-gallery', {
     var swiper = new Swiper('.swiper-calendar', {
         speed: 5000,
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 80,
         navigation: {
             nextEl: ".swiper-button-next",
         },  
+        breakpoints: {
+            770: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+          },
     });
 
 //  Submenu
