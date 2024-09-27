@@ -1,6 +1,7 @@
 main.socialarea {
   margin-bottom: 80px;
   .container-interno {
+    margin-left: 200px;
     width: 60%;
     h1 {
       text-transform: uppercase;
@@ -8,8 +9,18 @@ main.socialarea {
     h2 {
       margin-bottom: 40px;
     }
+    @media only screen and (max-width: 1600px) {
+      margin-left: 150px;
+    }
+    @media only screen and (max-width: 1400px) {
+      margin: 0 100px;
+    }
     @media only screen and (max-width: 990px) {
-      width: 95%;
+      margin: 0 25px;
+      width: 90%;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 88%;
     }
   }
   > figure {

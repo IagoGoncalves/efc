@@ -5,12 +5,18 @@ main.principles {
       gap: 100px;
       .card {
         text-align: center;
-        h2 {
+        img {
           margin: 40px 0;
         }
       }
       @media only screen and (max-width: 900px) {
         flex-wrap: wrap;
+        gap: 80px;
+        .card {
+          img {
+            margin: 20px 0;
+          }
+        }
       }
     }
   }
