@@ -70,7 +70,7 @@
                 <a href="#">
                     Rua Cel. Teófilo Cardoso <br>Pinto, 123 - Centro<br> Extrema/MG  <br>CEP: 37.640-026
                 </a>
-                <a href="#" class="privacy">Política de Privacidade</a>
+                <a href="<?= esc_url(home_url('/politica-de-privacidade')); ?>" class="privacy">Política de Privacidade</a>
             </div>
             <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png" alt="logo" ></a>
         </section>
