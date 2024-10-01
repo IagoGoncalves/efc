@@ -42,7 +42,7 @@ var swiper = new Swiper('.swiper-gallery', {
 
 // Swiper calendar
     var swiper = new Swiper('.swiper-calendar', {
-        speed: 5000,
+        speed: 2000,
         loop: true,
         slidesPerView: 1,
         spaceBetween: 80,

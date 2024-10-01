@@ -224,3 +224,23 @@ header {
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  header.mobile > div nav {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header.mobile > div nav {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header.mobile > div nav {
+    width: 86%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  header.mobile > div nav {
+    width: 81%;
+  }
+}

@@ -95,7 +95,7 @@ get_header();
         </div>
         <div class="group">
             <div class="second-column swiper-container swiper-calendar">
-                <h2 class="title">proximos jogos</h2>
+                <h2 class="title">próximos jogos</h2>
                 <div class="swiper-wrapper">
                     <?php $calendar = get_field('calendar');
                         if (isset($calendar['proximos_jogos']) && is_array($calendar['proximos_jogos'])) {
