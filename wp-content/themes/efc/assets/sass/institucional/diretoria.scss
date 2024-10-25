@@ -6,8 +6,15 @@ main.director {
     .container {
       display: flex;
       gap: 45px;
-      figure img {
-        border: 10px;
+      figure {
+        max-width: 350px;
+        max-height: 457px;
+        overflow: hidden;
+        img {
+          border: 10px;
+          width: 100%;
+          height: auto;
+        }
       }
       div {
         width: 60%;

@@ -143,8 +143,6 @@
       gap: 45px;
       a {
         figure {
-          max-width: 480px;
-          max-height: 324px;
           img {
             width: 100%;
             height: auto;
@@ -182,6 +180,10 @@
       right: 25%;
       top: 50%;
       transform: translate(50%, -50%);
+      img {
+        max-width: 100px;
+        margin: 0 auto;
+      }
       @media only screen and (max-width: 1340px) {
         transform: translate(50%, -50%);
         right: 13%;
@@ -194,11 +196,7 @@
           display: none;
         }
       }
-    }
-    @media only screen and (max-width: 450px) {
-      overflow: hidden;
-      span {
-        right: 3%;
+      @media only screen and (max-width: 450px) {
         img {
           width: 50%;
         }

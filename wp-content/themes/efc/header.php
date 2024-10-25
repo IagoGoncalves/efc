@@ -15,7 +15,7 @@
     <header id="header-desktop">
         <section class="first-line">
             <div class="container align">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-toca-do-lobo.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tocadolobo.png" alt="">
                 <a href="#" class="btn-secondary">Restaurante Taberna</a>
                 <p class="none">.</p>
 				<?php $args = array('post_type' => 'data'); $var = new WP_Query($args); if($var->have_posts()): while($var->have_posts()): $var->the_post();?>																	 
@@ -52,7 +52,7 @@
                 </div>
                 <div href="#" class="smallText submenu" data-menu="desktopMenu2" onClick="activeSubMenu('desktopMenu2')">Institucional
                     <span>
-                        <a href="http://localhost/efc/wp-content/uploads/2024/10/Estatuto-Extrema-Futebol-Clube.pdf" target="_blank">Estatuto</a>
+                        <a href="http://efc.local/wp-content/uploads/2024/10/Estatuto-Extrema-Futebol-Clube.pdf" target="_blank">Estatuto</a>
                         <a href="#">Regimento Interno</a>
                         <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
@@ -94,7 +94,7 @@
                 </div>
                 <div href="#" class="smallText submenu" data-menu="mobileMenu2" onClick="activeSubMenu('mobileMenu2')">Institucional
                     <span>
-                        <a href="#">Estatuto</a>
+                        <a href="http://efc.local/wp-content/uploads/2024/10/Estatuto-Extrema-Futebol-Clube.pdf">Estatuto</a>
                         <a href="#">Regimento Interno</a>
                         <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>

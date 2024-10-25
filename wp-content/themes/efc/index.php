@@ -41,7 +41,7 @@ get_header(); ?>
 			<div class="cta">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-cta.png">
 				<span>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-toca-do-lobo.png">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/tocadolobo.png">
 					<a href="#" class="btn-secondary">Compre aqui</a>
 				</span>
 			</div>

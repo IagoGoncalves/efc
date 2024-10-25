@@ -1,5 +1,6 @@
 a.card-notice {
   transition: var(--transition);
+  max-width: 480px;
   .date {
     margin: 16px 0 10px;
   }
@@ -7,6 +8,8 @@ a.card-notice {
     position: relative;
     max-width: 480px;
     max-height: 324px;
+    overflow: hidden;
+    object-position: center;
     &::after {
       position: absolute;
       top: 0;
