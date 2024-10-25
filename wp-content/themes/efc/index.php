@@ -49,22 +49,10 @@ get_header(); ?>
 		<section class="sponsors">
 			<div class="container">
 				<div class="first-line">
-					<h3 class="paragraph"> Patrocinadores</h3>
+					<h3 class="title">Patrocinadores e Parceiros</h3>
 					<?php
 						$ultima_secao = get_field('ultima_secao');
 						$galeria_de_logos = $ultima_secao['galeria_de_logos_patrocinadores'];
-						echo '<div class="galeria-logos align">';
-						foreach( $galeria_de_logos as $imagem ):
-							echo '<img src="' . esc_url( $imagem['url'] ) . '" alt="' . esc_attr( $imagem['alt'] ) . '" />';
-						endforeach;
-						echo '</div>';
-					?>
-				</div>
-				<div class="second-line">
-					<h3 class="paragraph">Parceiros</h3>
-					<?php
-						$ultima_secao = get_field('ultima_secao');
-						$galeria_de_logos = $ultima_secao['galeria_de_logos_parceiros'];
 						echo '<div class="galeria-logos align">';
 						foreach( $galeria_de_logos as $imagem ):
 							echo '<img src="' . esc_url( $imagem['url'] ) . '" alt="' . esc_attr( $imagem['alt'] ) . '" />';

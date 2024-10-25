@@ -110,7 +110,7 @@
       height: auto;
     }
     div h2 {
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
     @media only screen and (max-width: 1340px) {
       align-items: center;
@@ -206,19 +206,13 @@
     }
   }
   .sponsors {
-    background-color: var(--black);
+    background-color: #fff;
     padding: 80px 0;
     .container {
       h3 {
         text-transform: uppercase;
-        margin-bottom: 40px;
-        color: #fff;
+        margin-bottom: 70px;
         text-align: center;
-      }
-      .first-line {
-        padding-bottom: 80px;
-        margin-bottom: 80px;
-        border-bottom: 1px solid #fff;
       }
       > div {
         .galeria-logos {

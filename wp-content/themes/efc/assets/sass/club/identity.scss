@@ -15,6 +15,14 @@ main.identity {
       .mascote {
         margin-bottom: 40px;
       }
+      figure {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          max-width: 243px;
+          max-height: 657px;
+        }
+      }
       @media only screen and (max-width: 990px) {
         width: 100%;
       }

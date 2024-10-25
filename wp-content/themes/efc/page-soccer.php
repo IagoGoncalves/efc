@@ -32,8 +32,7 @@ get_header();
                         }
                         if ($nome) {
                             echo '<span><h2 class="paragraph">' . esc_html($nome) . '</h2>';
-                            echo '<p class="paragraph"><b>Posição:</b> ' . esc_html($posicao) . '</p>';
-                            echo '<p class="paragraph"><b>Idade:</b> ' . esc_html($idade) . '</p></span>';
+                            echo '<p class="paragraph"><b>Posição:</b> ' . esc_html($posicao) . '</p></span>';
                         }
                         echo '</div>';
                     }
