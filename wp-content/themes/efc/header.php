@@ -63,12 +63,13 @@
                 <div href="#" class="smallText submenu" data-menu="desktopMenu3" onClick="activeSubMenu('desktopMenu3')">Futebol
                     <span>
                         <a href="<?= esc_url(home_url('/futebol-sub-10')); ?>">Futebol Sub-10</a>
+                        <a href="<?= esc_url(home_url('/futebol-sub-11')); ?>">Futebol Sub-11</a>
                     </span>
                 </div>
                 <div href="#" class="smallText submenu" data-menu="desktopMenu4" onClick="activeSubMenu('desktopMenu4')">Área social
                     <span>
                         <a href="<?= esc_url(home_url('/quadra-poliesportiva')); ?>">Quadra</a>
-                        <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a>
+                        <!-- <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a> -->
                         <a href="<?= esc_url(home_url('/piscina')); ?>">Piscina</a>
                     </span>
                 </div>
@@ -102,12 +103,13 @@
                 <div href="#" class="smallText submenu" data-menu="mobileMenu3" onClick="activeSubMenu('mobileMenu3')">Futebol
                     <span>
                         <a href="<?= esc_url(home_url('/futebol-sub-10')); ?>">Futebol Sub-10</a>
+                        <a href="<?= esc_url(home_url('/futebol-sub-11')); ?>">Futebol Sub-11</a>
                     </span>
                 </div>
                 <div href="#" class="smallText submenu" data-menu="mobileMenu4" onClick="activeSubMenu('mobileMenu4')">Área social
                     <span>
                         <a href="<?= esc_url(home_url('/quadra-poliesportiva')); ?>">Quadra</a>
-                        <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a>
+                        <!-- <a href="<?= esc_url(home_url('/restaurante')); ?>">Restaurante</a> -->
                         <a href="<?= esc_url(home_url('/piscina')); ?>">Piscina</a>
                     </span>
                 </div>
