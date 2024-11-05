@@ -53,7 +53,6 @@
                 <div href="#" class="smallText submenu" data-menu="desktopMenu2" onClick="activeSubMenu('desktopMenu2')">Institucional
                     <span>
                         <a href="http://efc.local/wp-content/uploads/2024/10/Estatuto-Extrema-Futebol-Clube.pdf" target="_blank">Estatuto</a>
-                        <a href="#">Regimento Interno</a>
                         <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
                     </span>
@@ -95,7 +94,6 @@
                 <div href="#" class="smallText submenu" data-menu="mobileMenu2" onClick="activeSubMenu('mobileMenu2')">Institucional
                     <span>
                         <a href="http://efc.local/wp-content/uploads/2024/10/Estatuto-Extrema-Futebol-Clube.pdf">Estatuto</a>
-                        <a href="#">Regimento Interno</a>
                         <a href="<?= esc_url(home_url('/diretoria')); ?>">Diretoria</a>
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
                     </span>
