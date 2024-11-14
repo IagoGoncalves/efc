@@ -57,7 +57,7 @@
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
                     </span>
                 </div>
-                <a href="#" class="smallText">Sócio torcedor</a>
+                <a href="http://efc.local/wp-content/uploads/2024/11/Socio-torcedor.pdf" class="smallText">Sócio torcedor</a>
                 <p class="none">.</p>
                 <a href="<?= esc_url(home_url('/')); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" ></a>
                 <div href="#" class="smallText submenu" data-menu="desktopMenu3" onClick="activeSubMenu('desktopMenu3')">Futebol
@@ -99,7 +99,7 @@
                         <a href="<?= esc_url(home_url('/missao-visao-e-valores')); ?>">Missão, Visão e Valores</a>
                     </span>
                 </div>
-                <a href="#" class="smallText">Sócio torcedor</a>
+                <a href="http://efc.local/wp-content/uploads/2024/11/Socio-torcedor.pdf" class="smallText">Sócio torcedor</a>
                 <div href="#" class="smallText submenu" data-menu="mobileMenu3" onClick="activeSubMenu('mobileMenu3')">Futebol
                     <span>
                         <a href="<?= esc_url(home_url('/futebol-sub-10')); ?>">Futebol Sub-10</a>
