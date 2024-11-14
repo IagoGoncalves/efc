@@ -2,6 +2,7 @@ main.transparency {
   .container {
     h1 {
       text-transform: uppercase;
+      margin-bottom: 40px;
     }
     section {
       margin-bottom: 80px;
@@ -13,19 +14,21 @@ main.transparency {
           font-weight: var(--weight700);
           color: var(--black);
         }
-        p {
-          font-size: 2rem;
-          font-weight: var(--weight400);
-          color: var(--black2);
-          strong {
-            display: block;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: var(--weight400);
+        color: var(--black2);
+        strong {
+          display: block;
+          color: var(--black);
+          margin-top: 20px;
+          a {
+            transition: var(--transition);
             color: var(--black);
-            margin-top: 20px;
-            a {
-              transition: var(--transition);
-              &:hover {
-                color: var(--black2);
-              }
+
+            &:hover {
+              color: var(--black2);
             }
           }
         }
