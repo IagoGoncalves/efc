@@ -16,8 +16,10 @@ main.identity {
         margin-bottom: 40px;
       }
       figure {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 50%;
         img {
           max-width: 243px;
           max-height: 657px;
@@ -25,6 +27,15 @@ main.identity {
       }
       @media only screen and (max-width: 990px) {
         width: 100%;
+      }
+      @media only screen and (max-width: 450px) {
+        figure {
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
       }
     }
   }

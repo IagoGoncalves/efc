@@ -9,6 +9,11 @@ get_header();
 <main id="director" class="director" tabindex="-1" role="main">
     <div class="container">
         <h1 class="title"><?php the_title(); ?></h1>
+        <div class="default-card">
+            <figure><img src="<?= get_field('honra_imagem_honra')?>" alt=""></figure>
+            <span><h3 class="paragraph"><?= get_field('honra_nome')?></h3>
+            <p class="paragraph"><?= get_field('honra_cargo')?></p></span>
+        </div>
     </div>
     <section class="president">
         <div class="container">

@@ -13,7 +13,7 @@ if (locale === '/') {
 }
 // Swiper gallery
 var swiper = new Swiper('.swiper-gallery', {
-    speed: 5000,
+    speed: 3000,
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,

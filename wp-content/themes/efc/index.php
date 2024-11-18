@@ -42,7 +42,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-cta.png">
 				<span>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/tocadolobo.png">
-					<a href="#" class="btn-secondary">Compre aqui</a>
+					<a href="https://tocadolobostory.com.br/?fbclid=PAZXh0bgNhZW0CMTEAAaavHtO0b3woCtA2oCVt3wKn-NF_e-RgqDfuS99oy8dNjEludBdXtPRHvbs_aem_2mIXkswi_8bsNVST_4EMPAQ" target="_blank" class="btn-secondary">Compre aqui</a>
 				</span>
 			</div>
 		</div>

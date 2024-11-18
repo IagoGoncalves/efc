@@ -1,4 +1,18 @@
 main.director {
+  .container {
+    h1 {
+      margin-bottom: 80px;
+    }
+    div.default-card {
+      width: fit-content;
+      margin: 0 auto;
+      span h3 {
+        color: #fff;
+        font-weight: var(--weight700);
+        margin-bottom: 20px;
+      }
+    }
+  }
   .president {
     background: url("../efc/assets/images/bg-diretoria.png") no-repeat center;
     margin-top: 80px;
@@ -14,6 +28,7 @@ main.director {
           border: 10px;
           width: 100%;
           height: auto;
+          border-radius: var(--border-radius);
         }
       }
       div {
