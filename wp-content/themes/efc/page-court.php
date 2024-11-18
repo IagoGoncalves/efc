@@ -13,7 +13,7 @@ get_header();
    <figure><?php the_post_thumbnail(); ?></figure>
    <div class="container-interno">
       <h2 class="title"><?= get_field('titulo') ?></h2>
-      <p class="paragraph"><?= get_field('descritivo') ?></p>
+      <span class="paragraph"><?= get_field('descritivo') ?></span>
    </div>
    <?php set_query_var('field', 'galeria'); get_template_part('parts/gallery');?>
 </main>

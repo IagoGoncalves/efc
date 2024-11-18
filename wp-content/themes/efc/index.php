@@ -26,7 +26,7 @@ get_header(); ?>
 				<img src="<?= get_field('primeira_secao_imagem_da_primeira_secao')?>" alt="foto do time">
 				<div>
 					<h2 class="title"><?= get_field('primeira_secao_titulo_da_primeira_secao')?></h2>
-					<p class="paragraph"><?= get_field('primeira_secao_descritivo_da_primeira_secao')?></p>
+					<span class="paragraph"><?= get_field('primeira_secao_descritivo_da_primeira_secao')?></span>
 				</div>
 			</section>
 			<section class="news">

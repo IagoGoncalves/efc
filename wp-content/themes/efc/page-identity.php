@@ -12,7 +12,7 @@ get_header();
         <div class="content">
             <h2 class="title"><?= get_field('escudo') ?></h2>
             <img src="<?= get_field('logo_do_escudo')?>" class="escudo" alt="imagem do escudo">
-            <p class="paragraph"><?= get_field('texto_do_escudo') ?></p>
+            <span class="paragraph"><?= get_field('texto_do_escudo') ?></span>
             <h2 class="title"><?= get_field('uniformes') ?></h2>
             <figure>
                 <?php
@@ -23,11 +23,11 @@ get_header();
                             <?php endforeach; ?>
                 <?php endif; ?>
             </figure>
-            <p class="paragraph"><?= get_field('texto_do_uniforme') ?></p>
+            <span class="paragraph"><?= get_field('texto_do_uniforme') ?></span>
 
             <h2 class="title"><?= get_field('mascote') ?></h2>
             <img src="<?= get_field('imagem_do_mascote')?>" class="mascote" alt="imagem do escudo">
-            <p class="paragraph"><?= get_field('texto_do_mascote') ?></p>
+            <span class="paragraph"><?= get_field('texto_do_mascote') ?></span>
         </div>
    </div>
 </main>

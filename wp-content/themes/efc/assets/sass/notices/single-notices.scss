@@ -33,6 +33,9 @@ main.single-notice {
           height: auto;
         }
       }
+      div.paragraph p {
+        margin-bottom: 15px;
+      }
     }
     aside {
       width: 24%;
@@ -46,7 +49,7 @@ main.single-notice {
           text-align: center;
         }
         a {
-          margin-top: 60px;
+          margin-top: 30px;
         }
       }
       .card1 {
@@ -54,7 +57,8 @@ main.single-notice {
         background-repeat: no-repeat;
         margin-bottom: 40px;
         img {
-          margin-top: 60px;
+          margin-top: 30px;
+          max-width: 150px;
         }
       }
       .card2 {
@@ -124,8 +128,8 @@ main.single-notice {
       text-transform: uppercase;
     }
     > div {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       margin-top: 40px;
       gap: 45px;
       a {
@@ -139,7 +143,9 @@ main.single-notice {
         }
       }
       @media only screen and (max-width: 770px) {
+        display: flex;
         flex-direction: column;
+        align-items: center;
       }
     }
   }

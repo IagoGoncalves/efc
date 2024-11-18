@@ -4,6 +4,15 @@ main.expresident {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    div.default-card {
+      span {
+        height: 130px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
     @media only screen and (max-width: 990px) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -12,6 +21,12 @@ main.expresident {
     }
     @media only screen and (max-width: 600px) {
       grid-template-columns: repeat(1, 1fr);
+      div.default-card {
+        span {
+          height: 80px;
+          width: 300px;
+        }
+      }
     }
   }
 }
