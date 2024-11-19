@@ -34,14 +34,23 @@ main.socialarea {
       width: 88%;
     }
   }
-  @media only screen and (max-width: 1600px) {
-    .swiper-container {
-      figure {
-        max-height: 270px;
+  .swiper-container {
+    figure {
+      overflow: hidden;
+      img {
+        height: 335px;
+        width: auto;
       }
     }
+  }
+  @media only screen and (max-width: 1600px) {
     .container-interno {
       margin-left: 150px;
+    }
+  }
+  @media only screen and (max-width: 990px) {
+    .container-interno {
+      margin: 0 25px;
     }
   }
 }

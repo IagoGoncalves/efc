@@ -36,7 +36,7 @@ get_header(); ?>
 						get_template_part('parts/card-notice');
 					endwhile; endif; wp_reset_postdata(); ?>
 				</div>
-				<a href="#" class="btn-default">Todas as notícias</a>
+				<a href="<?= esc_url(home_url('/noticias')); ?>" class="btn-default">Todas as notícias</a>
 			</section>
 			<div class="cta">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-cta.png">

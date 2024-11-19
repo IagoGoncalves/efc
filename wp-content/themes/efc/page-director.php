@@ -23,7 +23,7 @@ get_header();
             <div>
                 <h2 class="title"><?= get_field('president_nome_e_sobrenome')?></h2>
                 <h3>Presidente</h3>
-                <p class="paragraph"><?= get_field('president_texto_sobre')?></p>
+                <span class="paragraph"><?= get_field('president_texto_sobre')?></span>
             </div>
         </div>
     </section>
