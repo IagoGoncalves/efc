@@ -26,7 +26,7 @@
         'public' => true,
         'has_archive' => true,
         'show_in_nav_menus' => true,
-        'supports' => array('title', 'editor','revisions', 'thumbnail'),
+        'supports' => array('title', 'revisions', 'thumbnail'),
         'menu_icon' => 'dashicons-images-alt',
     );
     register_post_type('Banners', $args);

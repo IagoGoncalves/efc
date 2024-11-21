@@ -13,40 +13,10 @@
         }
         .content {
           position: absolute;
-          top: 50%;
+          top: 78%;
           transform: translateY(-50%);
-          h2 {
-            color: #fff;
-            font-size: 6.4rem;
-            font-weight: var(--weight700);
-            text-transform: uppercase;
-            width: 55%;
-            margin-bottom: 20px;
-          }
-          p {
-            color: #fff;
-            font-size: 2.4rem;
-            font-weight: var(--weight500);
-            width: 45%;
-          }
           a {
             margin-top: 30px;
-          }
-          @media only screen and (max-width: 1340px) {
-            h2 {
-              font-size: 4.2rem;
-            }
-            p {
-              font-size: 2rem;
-            }
-          }
-          @media only screen and (max-width: 990px) {
-            h2 {
-              font-size: 3.6rem;
-            }
-            p {
-              font-size: 1.8rem;
-            }
           }
         }
         @media only screen and (max-width: 990px) {
@@ -60,24 +30,14 @@
           }
           .content {
             width: 80%;
-            top: 25%;
+            top: unset;
+            bottom: 58%;
             left: 45%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 10%);
             text-align: center;
-            h2,
-            p {
-              width: 100%;
-            }
             a {
               margin-left: auto;
               margin-right: auto;
-            }
-          }
-        }
-        @media only screen and (max-width: 400px) {
-          .content {
-            h2 {
-              font-size: 2.8rem;
             }
           }
         }

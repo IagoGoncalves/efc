@@ -10,8 +10,6 @@ get_header(); ?>
 				<?php $args = array('post_type' => 'banners', 'posts_per_page' => 3); $var = new WP_Query($args); if($var->have_posts()): while($var->have_posts()): $var->the_post();?>																	 
 					<div class="swiper-slide">
 						<div class="content container">
-							<h2><?php the_title() ?></h2>
-							<?php the_content() ?>
 							<a href="<?= get_field('url_do_botao')?>" class="btn-secondary"><?= get_field('nome_do_botao')?></a>
 						</div>
 						<?= get_the_post_thumbnail(get_the_ID());?>
